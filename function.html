@@ -1,0 +1,42 @@
+<html>
+<head>
+      <title>JavaScript Functions </title>
+      <style>
+            .function{
+                  margin-left:80px;
+                  height:30%;
+                  width: 80%;
+                  padding:0px;
+                  background-color: salmon;
+                  text-align: center;
+            }
+      </style>
+</head>
+<body>
+      <div class="container">
+      <div class="function">
+            //Functions:
+            <h2>JavaScript Functions</h2>
+            <P>Sum Of All Arguments</P>
+            <p>first we declare the function it wiil be used in any where in the code</p>
+            <p id="demo"></p>
+ </div>
+</div>
+<script>
+      let i;//outer variable
+      function sumAll(){  //function declaration
+            let sum=0;//local variable
+            for(i=0;i<arguments.length;i++){
+                  sum =sum+arguments[i];
+            }
+        return sum;
+      }
+  document.getElementById("demo").innerHTML=sumAll(10,20,30,40,50);//calling function
+</script>
+</body>
+</html>
+        
+    
+
+
+            
